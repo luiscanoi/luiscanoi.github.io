@@ -678,7 +678,6 @@ header {
 .section.goodbye {
 	@media (max-width: 400px) {
 		text-align: center;
-		position: relative;
 	}
 	.spaced-items {
 		margin-top: 42px;
@@ -692,16 +691,15 @@ header {
 		text-align: center;
 	}
 	.image {
-		display: inline-block;
-		text-align: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 		img {
-			width: 546px;
-			height: 356px;
+			width: 50%;
 		}
 		@media (max-width: 600px) {
 			img {
-				width: 273px;
-				height: 178px;
+				width: 75%;
 			}
 		}
 	}
