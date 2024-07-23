@@ -1,1 +1,3 @@
-removed glitch-effect from the class in builder.html, portfolio.html
+removed glitch-effect from the class in the title div for:
+_layouts/ builder.html, portfolio.html, blog.html
+_includes/ section-home.html
