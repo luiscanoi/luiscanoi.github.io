@@ -50,3 +50,5 @@ contacts_form:
 
 From contact.html removed (temporarily)
 sections: contacts-info
+
+renamed contacts-info to contactsinfo

@@ -24,7 +24,7 @@ main:
   # Contact
   - title: "Contact"
     url: "contact/"
-    button: 0
+    button: 1
 
   # Blog
   - title: "Blog"
