@@ -2,7 +2,9 @@ removed glitch-effect from the class in the title div for:
 _layouts/ builder.html, portfolio.html, blog.html
 _includes/ section-home.html
 
-Modified assets/js/typed.js backDelay from 500 to 1000
+Modified assets/js/typed.js 
+backDelay from 500 to 1500
+typewrite and backspace random speed altered (og. was 100 - 30)
 
 deleted doc/ folder and its contents
 
@@ -42,13 +44,13 @@ in assets/js/glitche-scripts.js removed the section validating the contact form
 removed from config.yml the formsubmit info
 # formsubmit.io
 formsubmit_email: "luis.cano.iri@gmail.com" # sign up on https://formsubmit.io/ and confirm your email
-and from content.yml:
+and removed from content.yml:
 ### Contact Form [ contacts-form ]
 contacts_form:
   title: "Contact Form"
 
-
-From contact.html removed (temporarily)
-sections: contacts-info
-
 renamed contacts-info to contactsinfo
+created the goodbye and capybara sections, and their respective css classes
+
+Added to contact.html new sections:
+sections: contactsinfo,goodbye,capybara
