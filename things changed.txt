@@ -9,3 +9,7 @@ deleted doc/ folder and its contents
 Updated content in _data/
 home.yml
 footer.yml
+
+updated colors in _sass/glitche/. 
+new color in settings.scss
+colors updated for classes in layout.scss
