@@ -5,6 +5,9 @@
 
 main:
   social:
+    - title: "test"
+      icon: "social-instagram-outline"
+      url: "https://www.linkedin.com/in/luis-cano-irigoyen-0624381ba/"
     - title: "Linkedin"
       icon: "ion-social-linkedin"
       url: "https://www.linkedin.com/in/luis-cano-irigoyen-0624381ba/"

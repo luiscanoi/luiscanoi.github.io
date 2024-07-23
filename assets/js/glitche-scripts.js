@@ -45,7 +45,7 @@ $(function () {
 			var url_hash = location.hash;
 			var sectionElem = $(url_hash);
 			if(url_hash.indexOf('#section-') == 0 && sectionElem.length){
-				$('body, html').animate({scrollTop: $(url_hash).offset().top - 70}, 5000);
+				$('body, html').animate({scrollTop: $(url_hash).offset().top - 70}, 400);
 			}
 		});
 	});
