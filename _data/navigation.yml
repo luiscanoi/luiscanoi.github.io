@@ -12,7 +12,7 @@ main:
     button: 0
     
   # Resume
-  - title: "Resume"
+  - title: "Resume Test 1"
     url: "resume/"
     button: 0
   
