@@ -208,7 +208,5 @@ contacts_info:
       icon: "ios-location"
       value: "N.L., Mexico (open to relocate / remote)"
 
-### Contact Form [ contacts-form ]
-contacts_form:
-  title: "Contact Form"
+
 

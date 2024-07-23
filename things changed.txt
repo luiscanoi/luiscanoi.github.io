@@ -18,7 +18,31 @@ removed the (non-working) contact form from contacts.html (sections: contacts-fo
 and sent the _includes/section-contacts-form to recyclebin/
 
 in assets/js/glitche-scripts.js removed the section validating the contact form
+/* Validate contact form */
+	$("#cform").validate({
+		rules: {
+			name: {
+				required: true
+			},
+			message: {
+				required: true
+			},
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		success: "valid",
+		submitHandler: function() {
+			return true;
+			$("#cform").find('input[type="text"], input[type="email"], input[type="tel"], textarea').val('');
+		}
+	});
 
-reved from config the formsubmit info
+removed from config.yml the formsubmit info
 # formsubmit.io
 formsubmit_email: "luis.cano.iri@gmail.com" # sign up on https://formsubmit.io/ and confirm your email
+and from content.yml:
+### Contact Form [ contacts-form ]
+contacts_form:
+  title: "Contact Form"

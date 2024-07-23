@@ -19,7 +19,7 @@ $(function () {
 	/* Typed preload text */
 	$('.typed-load').typed({
 		stringsElement: $('.typing-load'),
-		loop: true
+		loop: false
 	});
 	
 	/* Preloader */
@@ -110,27 +110,6 @@ $(function () {
 			$('.top-menu ul li.active a.btn').addClass('glitch-effect-white');
 		}
 	}, 'a.btn, .btn');
-	
-	/* Validate contact form */
-	$("#cform").validate({
-		rules: {
-			name: {
-				required: true
-			},
-			message: {
-				required: true
-			},
-			email: {
-				required: true,
-				email: true
-			}
-		},
-		success: "valid",
-		submitHandler: function() {
-			return true;
-			$("#cform").find('input[type="text"], input[type="email"], input[type="tel"], textarea').val('');
-		}
-	});
 	
 	/* Initialize masonry items */
 	var $container_clients = $('.section.clients .box-items');
