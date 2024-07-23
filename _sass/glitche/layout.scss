@@ -688,9 +688,11 @@ header {
 
 .section.capybara {
 	.image {
-		width: auto;
-   		margin: auto;
-		display: block;
+		img {
+			width: auto;
+			margin: auto;
+			display: block;
+		}
 	}
 	.spaced-items {
 		margin-top: 42px;
