@@ -206,7 +206,7 @@ contacts_info:
 
     - label: "Address"
       icon: "ios-location"
-      value: "N.L., Mexico
+      value: "N.L., Mexico \n
               I like remote :) but open to relocate"
 
 ### Contact Form [ contacts-form ]
