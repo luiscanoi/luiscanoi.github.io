@@ -665,10 +665,11 @@ header {
 
 .section.goodbye {
 	@media (max-width: 400px) {
+		margin-bottom: 42px;
 		text-align: center;
 		position: relative;
 	}
-	.desc {
+	.items {
 		margin-bottom: 42px;
 		text-align: center;
 		position: relative;
