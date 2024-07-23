@@ -54,3 +54,5 @@ created the goodbye and capybara sections, and their respective css classes
 
 Added to contact.html new sections:
 sections: contactsinfo,goodbye,capybara
+
+updated favicon and removed site description
