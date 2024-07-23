@@ -10,13 +10,11 @@
 		</div>
 		{{ endif }}
 		
-		<div class="items">
+		<div class="spaced-items">
 			{{ content.text }}
 		</div>
+		<div class="bts"><a target="_blank" href="{{ content.download.link }}" class="btn fill" data-text="{{ content.download.text }}">{{ content.download.text }}</a></div>
 
-		<div class="items">
-			<div class="bts"><a target="_blank" href="{{ content.download.link }}" class="btn fill" data-text="{{ content.download.text }}">{{ content.download.text }}</a></div>
-		</div>
 		<div class="clear"></div>
 	</div>
 </div>

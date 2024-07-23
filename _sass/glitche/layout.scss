@@ -677,12 +677,11 @@ header {
 
 .section.goodbye {
 	@media (max-width: 400px) {
-		margin-bottom: 42px;
 		text-align: center;
 		position: relative;
 	}
-	.items {
-		margin-bottom: 42px;
+	.spaced-items {
+		margin-top: 42px;
 		text-align: center;
 		position: relative;
 	}
@@ -694,6 +693,7 @@ header {
 	}
 	.image {
 		display: inline-block;
+		text-align: center;
 		img {
 			width: 546px;
 			height: 356px;
@@ -705,15 +705,16 @@ header {
 			}
 		}
 		@media (max-width: 400px) {
-			text-align: center;
 			img {
 				width: 100px;
 				height: 100px;
 			}
 		}
 	}
-	.items {
-		margin-bottom: 42px;
+	.spaced-items {
+		margin-top: 42px;
+		text-align: center;
+		position: relative;
 	}
 }
 
