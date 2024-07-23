@@ -198,15 +198,15 @@ contacts_info:
   list:
     - label: "Phone"
       icon: "android-phone-portrait"
-      value: "+ (231) 456 67 89"
+      value: "that's a secret"
 
     - label: "Email"
       icon:  "email"
-      value: "<a href='mailto:john-doe@gmail.com'>john-doe@gmail.com</a>"
+      value: "<a href='mailto:luis.cano.iri@gmail.com'>luis.cano.iri@gmail.com</a>"
 
     - label: "Address"
       icon: "ios-location"
-      value: "2621 W Pico Blvd, Los Angeles"
+      value: "N.L., Mexico (open to relocate)"
 
 ### Contact Form [ contacts-form ]
 contacts_form:

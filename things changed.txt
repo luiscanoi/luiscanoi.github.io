@@ -1,3 +1,9 @@
 removed glitch-effect from the class in the title div for:
 _layouts/ builder.html, portfolio.html, blog.html
 _includes/ section-home.html
+
+Modified assets/js/typed.js backDelay from 500 to 1000
+
+Updated social icons/links in _data/footer.yml
+
+deleted doc/ folder and its contents
