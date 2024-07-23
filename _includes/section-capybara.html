@@ -5,7 +5,7 @@
 	<div class="content">
 
 		{{ if content.image != '' }}
-		<div class="img">
+		<div class="image">
 			<img src="{{ content.image | relative_url }}" alt="" />
 		</div>
 		{{ endif }}
@@ -13,8 +13,9 @@
 		<div class="spaced-items">
 			{{ content.text }}
 		</div>
-		<div class="bts"><a target="_blank" href="{{ content.download.link }}" class="btn fill" data-text="{{ content.download.text }}">{{ content.download.text }}</a></div>
-
+		<div class="spaced-items"></div>
+			<div class="bts"><a target="_blank" href="{{ content.download.link }}" class="btn fill" data-text="{{ content.download.text }}">{{ content.download.text }}</a></div>
+		</div>
 		<div class="clear"></div>
 	</div>
 </div>
