@@ -19,7 +19,7 @@ $(function () {
 	/* Typed preload text */
 	$('.typed-load').typed({
 		stringsElement: $('.typing-load'),
-		loop: false
+		loop: true
 	});
 	
 	/* Preloader */
