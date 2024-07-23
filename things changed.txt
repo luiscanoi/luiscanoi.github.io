@@ -13,3 +13,5 @@ footer.yml
 updated colors in _sass/glitche/. 
 new color in settings.scss
 colors updated for classes in layout.scss
+
+removed the (non-working) contact form from contacts.html (sections: contacts-form)
