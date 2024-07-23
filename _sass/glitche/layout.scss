@@ -663,6 +663,15 @@ header {
 	}
 }
 
+.section.goodbye {
+	@media (max-width: 400px) {
+		text-align: center;
+	}
+	.desc {
+		text-align: center;
+	}
+}
+
 /* 11. Blog */
 .post-image {
 	margin: 0 0 25px 0;

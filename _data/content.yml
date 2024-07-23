@@ -192,8 +192,8 @@ clients:
     - url: "https://www.google.com"
       image: "assets/img/clients/client_3.png"
 
-### Contact Info [ contacts-info ]
-contacts_info:
+### Contact Info [ contactsinfo ]
+contactsinfo:
   title: "Get in Touch"
   list:
     - label: "Phone"
@@ -208,5 +208,11 @@ contacts_info:
       icon: "ios-location"
       value: "N.L, Mexico (open to relocate, open to remote)"
 
-
+### Goodbye [goodbye]
+goodbye:
+  title: "Hope you liked the site!"
+  text: "Here's the CV in case you missed it :)"
+  download:
+    text: "Download CV"
+    link: "https://drive.google.com/"
 

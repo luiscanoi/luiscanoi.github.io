@@ -1,0 +1,18 @@
+{% assign content = site.data.content['about'] %}
+
+<!-- About -->
+<div class="section goodbye">
+	<div class="content">
+		{{ if content.title != '' }}
+		<div class="title">
+			<div class="title_inner">{{ content.title }}</div>
+		</div>
+		{{ endif }}
+		
+		<div class="desc">
+			{{ content.text }}
+			<div class="bts"><a target="_blank" href="{{ content.download.link }}" class="btn fill" data-text="{{ content.download.text }}">{{ content.download.text }}</a></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
