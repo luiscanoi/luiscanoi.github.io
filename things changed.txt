@@ -4,6 +4,8 @@ _includes/ section-home.html
 
 Modified assets/js/typed.js backDelay from 500 to 1000
 
-Updated social icons/links in _data/footer.yml
-
 deleted doc/ folder and its contents
+
+Updated content in _data/
+home.yml
+footer.yml
