@@ -146,7 +146,7 @@
 
             // varying values for setTimeout during typing
             // can't be global since number changes each time loop is executed
-            var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
+            var humanize = Math.round(Math.random() * (100 - 50)) + this.typeSpeed;
             var self = this;
 
             // ------------- optional ------------- //
@@ -407,7 +407,7 @@
         // shuffle the strings
         shuffle: false,
         // time before backspacing
-        backDelay: 1000,
+        backDelay: 1500,
         // loop
         loop: false,
         // false = infinite
