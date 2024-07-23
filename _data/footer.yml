@@ -5,15 +5,12 @@
 
 main:
   social:
-    - title: "Dribbble"
-      icon: "social-dribbble"
-      url: "https://dribbble.com/"
-    - title: "Twitter"
-      icon: "social-twitter"
-      url: "https://twitter.com/"
+    - title: "Linkedin"
+      icon: "ion-social-linkedin"
+      url: "https://www.linkedin.com/in/luis-cano-irigoyen-0624381ba/"
     - title: "GitHub"
       icon: "social-github"
-      url: "https://github.com/"
+      url: "https://github.com/luiscanoi"
     - title: "Instagram"
       icon: "social-instagram-outline"
       url: "https://instagram.com/"
