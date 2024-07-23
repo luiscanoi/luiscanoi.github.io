@@ -23,7 +23,7 @@ title: "Luis Cano"
 email: "luis.cano.iri@gmail.com"
 description: "Luis Cano Resume and Portfolio"
 author: "Admin"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: # the subpath of your site, e.g. /blog
 url: "https://luiscanoi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 date_format: "%d %B %Y"
 
@@ -35,9 +35,6 @@ permalink: pretty
 # disqus comments
 disqus_comments: "yes" # yes - show disqus comments, no - hide disqus comments
 disqus_shortname: "glitche-jekyll-theme" # read more here https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-
-# formsubmit.io
-formsubmit_email: "luis.cano.iri@gmail.com" # sign up on https://formsubmit.io/ and confirm your email
 
 # collections
 collections:
