@@ -20,13 +20,14 @@ main:
   - title: "Portfolio"
     url: "portfolio/"
     button: 0
-  
+
+  # Contact
+  - title: "Contact"
+    url: "contact/"
+    button: 0
+
   # Blog
   - title: "Blog"
     url: "blog/"
     button: 0
   
-  # Contacts
-  - title: "Contact"
-    url: "contact/"
-    button: 1

@@ -46,3 +46,7 @@ and from content.yml:
 ### Contact Form [ contacts-form ]
 contacts_form:
   title: "Contact Form"
+
+
+From contact.html removed (temporarily)
+sections: contacts-info
