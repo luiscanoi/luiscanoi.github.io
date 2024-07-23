@@ -23,9 +23,12 @@ title: "Luis Cano"
 email: "luis.cano.iri@gmail.com"
 description: "Luis Cano Resume and Portfolio"
 author: "Admin"
+url: https://luiscanoi.github.io # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. /blog
-url: "https://luiscanoi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 date_format: "%d %B %Y"
+
+# formsubmit.io
+formsubmit_email: "luis.cano.iri@gmail.com" # sign up on https://formsubmit.io/ and confirm your email
 
 # paginations & permalinks
 paginate: 9

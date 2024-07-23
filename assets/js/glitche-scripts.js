@@ -111,7 +111,7 @@ $(function () {
 		}
 	}, 'a.btn, .btn');
 	
-	/* Validate contact form 
+	/* Validate contact form */
 	$("#cform").validate({
 		rules: {
 			name: {
@@ -130,7 +130,7 @@ $(function () {
 			return true;
 			$("#cform").find('input[type="text"], input[type="email"], input[type="tel"], textarea').val('');
 		}
-	}); */
+	});
 	
 	/* Initialize masonry items */
 	var $container_clients = $('.section.clients .box-items');

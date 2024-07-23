@@ -209,6 +209,6 @@ contacts_info:
       value: "N.L., Mexico (open to relocate / remote)"
 
 ### Contact Form [ contacts-form ]
-### contacts_form:
-###  title: "Contact Form"
+contacts_form:
+  title: "Contact Form"
 
