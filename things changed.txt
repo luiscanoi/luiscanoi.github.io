@@ -15,3 +15,6 @@ new color in settings.scss
 colors updated for classes in layout.scss
 
 removed the (non-working) contact form from contacts.html (sections: contacts-form)
+and sent the _includes/section-contacts-form to recyclebin/
+
+in assets/js/glitche-scripts.js removed the section validating the contact form
