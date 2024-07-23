@@ -27,6 +27,6 @@ main:
     button: 0
   
   # Contacts
-  - title: "Contacts"
-    url: "contacts/"
+  - title: "Contact"
+    url: "contact/"
     button: 1
