@@ -688,6 +688,35 @@ header {
 	}
 }
 
+.section.capybara {
+	@media (max-width: 400px) {
+		text-align: center;
+	}
+	.image {
+		display: inline-block;
+		img {
+			width: 546px;
+			height: 356px;
+		}
+		@media (max-width: 600px) {
+			img {
+				width: 80px;
+				height: 80px;
+			}
+		}
+		@media (max-width: 400px) {
+			text-align: center;
+			img {
+				width: 100px;
+				height: 100px;
+			}
+		}
+	}
+	.items {
+		margin-bottom: 42px;
+	}
+}
+
 /* 11. Blog */
 .post-image {
 	margin: 0 0 25px 0;

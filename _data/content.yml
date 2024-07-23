@@ -216,3 +216,11 @@ goodbye:
     text: "Download CV"
     link: "https://drive.google.com/"
 
+### Capybara [capybara]
+capybara:
+  image: "assets/img/capywave.jpg"
+  text: "Click below for capybara pictures"
+  download:
+    text: "Capybaras"
+    link: "https://drive.google.com/"
+
