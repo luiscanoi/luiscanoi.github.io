@@ -666,9 +666,12 @@ header {
 .section.goodbye {
 	@media (max-width: 400px) {
 		text-align: center;
+		position: relative;
 	}
 	.desc {
+		margin-bottom: 42px;
 		text-align: center;
+		position: relative;
 	}
 }
 
