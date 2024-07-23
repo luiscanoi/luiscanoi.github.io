@@ -24,7 +24,7 @@ $(function () {
 	
 	/* Preloader */
 	$(window).on('load', function() {
-		$(".preloader .pre-inner").fadeOut(800, function(){
+		$(".preloader .pre-inner").fadeOut(1600, function(){
 			/* Preload hide */
 			$('.preloader').fadeOut();
 			$('body').addClass('loaded');
