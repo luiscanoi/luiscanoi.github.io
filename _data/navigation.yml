@@ -14,7 +14,7 @@ main:
   # Resume
   - title: "Resume"
     url: "resume/"
-    button: 0
+    button: 1
   
   # Portfolio
   - title: "Portfolio"
