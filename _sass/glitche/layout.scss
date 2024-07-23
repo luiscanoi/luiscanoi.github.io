@@ -687,13 +687,10 @@ header {
 }
 
 .section.capybara {
-	@media (max-width: 400px) {
-		text-align: center;
-	}
 	.image {
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		width: auto;
+   		margin: auto;
 		img {
 			width: 50%;
 		}
