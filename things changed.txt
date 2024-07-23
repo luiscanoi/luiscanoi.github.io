@@ -1,0 +1,1 @@
+removed glitch-effect from the class in builder.html, portfolio.html
