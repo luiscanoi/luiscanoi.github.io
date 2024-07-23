@@ -14,11 +14,16 @@ main:
   # Resume
   - title: "Resume"
     url: "resume/"
-    button: 1
+    button: 0
   
   # Portfolio
   - title: "Portfolio"
     url: "portfolio/"
+    button: 0
+
+# Blog
+  - title: "Blog"
+    url: "blog/"
     button: 0
 
   # Contact
@@ -26,8 +31,5 @@ main:
     url: "contact/"
     button: 1
 
-  # Blog
-  - title: "Blog"
-    url: "blog/"
-    button: 0
+
   
