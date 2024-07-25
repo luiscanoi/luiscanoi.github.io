@@ -693,6 +693,13 @@ header {
 			margin: auto;
 			display: block;
 		}
+		@media (max-width: 400px) {
+			img {
+				width: 70%;
+				margin: auto;
+				display: block;
+			}
+		}
 	}
 	.spaced-items {
 		margin-top: 42px;
