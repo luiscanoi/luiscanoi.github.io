@@ -23,8 +23,8 @@ title: "Luis Cano"
 email: "luis.cano.iri@gmail.com"
 description: 
 author: "Admin"
-url: https://luiscanoi.github.io
-baseurl:
+url: "https://luiscanoi.github.io"
+baseurl: ""
 date_format: "%d %B %Y"
 
 # paginations & permalinks
