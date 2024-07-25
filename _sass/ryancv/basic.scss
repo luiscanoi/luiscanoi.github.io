@@ -1255,8 +1255,8 @@ input[type="file"] {
   height: 80px;
   background-color: rgba(255, 255, 255, 0.1);
   bottom: -320px;
-  -webkit-animation: square 50s infinite;
-  animation: square 50s infinite;
+  -webkit-animation: circle 50s infinite;
+  animation: circle 50s infinite;
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
   border-radius: 4px;
@@ -1341,7 +1341,7 @@ input[type="file"] {
           animation-delay: 22s;
 }
 
-@-webkit-keyframes square {
+@-webkit-keyframes circle {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -1352,7 +1352,7 @@ input[type="file"] {
   }
 }
 
-@keyframes square {
+@keyframes circle {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
