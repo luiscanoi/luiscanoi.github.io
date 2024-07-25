@@ -1256,6 +1256,9 @@ input[type="file"] {
   animation: animate 50s infinite;
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
+  img {
+	opacity: 0.75;
+  }
 }
 
 .bg-bubbles li:nth-child(1) {
