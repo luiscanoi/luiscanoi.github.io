@@ -1253,26 +1253,29 @@ input[type="file"] {
   display: block;
   width: 80px;
   height: 80px;
-  background-color: rgba(255, 255, 255, 0.1);
   bottom: -320px;
-  -webkit-animation: circle 50s infinite;
-  animation: circle 50s infinite;
+  -webkit-animation: animate 50s infinite;
+  animation: animate 50s infinite;
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
-  border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-khtml-border-radius: 4px;
 }
 
 .bg-bubbles li:nth-child(1) {
   left: 10%;
+  img {
+	width: 80px;
+    height: 80px;
+  }
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .bg-bubbles li:nth-child(2) {
   left: 20%;
-  width: 160px;
-  height: 160px;
+  img {
+	width: 160px;
+	height: 160px;
+  }
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
   -webkit-animation-duration: 34s;
@@ -1281,42 +1284,64 @@ input[type="file"] {
 
 .bg-bubbles li:nth-child(3) {
   left: 25%;
+  img {
+	width: 140px;
+	height: 140px;
+  }
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
 
 .bg-bubbles li:nth-child(4) {
   left: 40%;
-  width: 120px;
-  height: 120px;
+  img {
+	width: 120px;
+	height: 120px;
+  }
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
   -webkit-animation-duration: 44s;
           animation-duration: 44s;
 }
 
 .bg-bubbles li:nth-child(5) {
   left: 70%;
+  img {
+	width: 80px;
+	height: 80px;
+  }
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 44s;
+          animation-duration: 44s;
 }
 
 .bg-bubbles li:nth-child(6) {
   left: 80%;
-  width: 240px;
-  height: 240px;
+  img {
+	width: 240px;
+	height: 240px;
+  }
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
 .bg-bubbles li:nth-child(7) {
   left: 32%;
-  width: 320px;
-  height: 320px;
+  img {
+	width: 320px;
+	height: 320px;
+  }
   -webkit-animation-delay: 7s;
           animation-delay: 7s;
 }
 
 .bg-bubbles li:nth-child(8) {
   left: 55%;
-  width: 40px;
-  height: 40px;
+  img {
+	width: 40px;
+	height: 40px;
+  }
   -webkit-animation-delay: 15s;
           animation-delay: 15s;
   -webkit-animation-duration: 80s;
@@ -1325,8 +1350,10 @@ input[type="file"] {
 
 .bg-bubbles li:nth-child(9) {
   left: 25%;
-  width: 20px;
-  height: 20px;
+  img {
+	width: 60px;
+	height: 60px;
+  }
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
   -webkit-animation-duration: 80s;
@@ -1335,13 +1362,15 @@ input[type="file"] {
 
 .bg-bubbles li:nth-child(10) {
   left: 90%;
-  width: 320px;
-  height: 320px;
-  -webkit-animation-delay: 22s;
-          animation-delay: 22s;
+  img {
+	width: 500px;
+	height: 500px;
+  }
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
 }
 
-@-webkit-keyframes circle {
+@-webkit-keyframes animate {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
@@ -1352,7 +1381,7 @@ input[type="file"] {
   }
 }
 
-@keyframes circle {
+@keyframes animate {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
