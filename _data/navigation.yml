@@ -47,4 +47,3 @@ main:
     slug: "contacts"
     sections:
         - contacts-info
-        - contacts-form
