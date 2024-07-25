@@ -5,13 +5,16 @@
 
 main:
   social:
-    - title: "Linkedin"
-      icon: "social-linkedin"
-      url: "https://www.linkedin.com/in/luis-cano-irigoyen-0624381ba/"
+    - title: "Dribbble"
+      icon: "social-dribbble"
+      url: "https://dribbble.com/"
+    - title: "Twitter"
+      icon: "social-twitter"
+      url: "https://twitter.com/"
     - title: "GitHub"
       icon: "social-github"
-      url: "https://github.com/luiscanoi"
+      url: "https://github.com/"
     - title: "Instagram"
       icon: "social-instagram-outline"
-      url: "https://www.instagram.com/luiscano00/"
-  copy: "© 2024 All rights reserved."
+      url: "https://instagram.com/"
+  copy: "© 2020 Glitche. All rights reserved."
