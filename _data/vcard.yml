@@ -15,7 +15,7 @@ main:
     - text: "Web Designer"
     - text: "Blogger"
     - text: "Freelancer"
-    - text: "Photographer"
+    - text: "This is a longer text string!"
   social:
     - title: "Dribbble"
       icon: "fab fa-dribbble"
