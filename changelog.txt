@@ -1,0 +1,58 @@
+removed glitch-effect from the class in the title div for:
+_layouts/ builder.html, portfolio.html, blog.html
+_includes/ section-home.html
+
+Modified assets/js/typed.js 
+backDelay from 500 to 1500
+typewrite and backspace random speed altered (og. was 100 - 30)
+
+deleted doc/ folder and its contents
+
+Updated content in _data/
+home.yml
+footer.yml
+
+updated colors in _sass/glitche/. 
+new color in settings.scss
+colors updated for classes in layout.scss
+
+removed the (non-working) contact form from contacts.html (sections: contacts-form)
+and sent the _includes/section-contacts-form to recyclebin/
+
+in assets/js/glitche-scripts.js removed the section validating the contact form
+/* Validate contact form */
+	$("#cform").validate({
+		rules: {
+			name: {
+				required: true
+			},
+			message: {
+				required: true
+			},
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		success: "valid",
+		submitHandler: function() {
+			return true;
+			$("#cform").find('input[type="text"], input[type="email"], input[type="tel"], textarea').val('');
+		}
+	});
+
+removed from config.yml the formsubmit info
+# formsubmit.io
+formsubmit_email: "luis.cano.iri@gmail.com" # sign up on https://formsubmit.io/ and confirm your email
+and removed from content.yml:
+### Contact Form [ contacts-form ]
+contacts_form:
+  title: "Contact Form"
+
+renamed contacts-info to contactsinfo
+created the goodbye and capybara sections, and their respective css classes
+
+Added to contact.html new sections:
+sections: contactsinfo,goodbye,capybara
+
+updated favicon and removed site description

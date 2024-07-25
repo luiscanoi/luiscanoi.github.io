@@ -1,0 +1,21 @@
+{% assign content = site.data.content['capybara'] %}
+
+<!-- About -->
+<div class="section capybara">
+	<div class="content">
+
+		{{ if content.image != '' }}
+		<div class="image">
+			<img src="{{ content.image | relative_url }}" alt="" />
+		</div>
+		{{ endif }}
+		
+		<div class="spaced-items">
+			{{ content.text }}
+		</div>
+		<div class="spaced-items">
+			<div class="bts"><a target="_blank" href="{{ content.download.link }}" class="btn fill" data-text="{{ content.download.text }}">{{ content.download.text }}</a></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
