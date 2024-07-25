@@ -135,12 +135,12 @@ header {
 					}
 					&.active {
 						a {
-							color: $active-color-darker;
+							color: $active-color;
 						}
 						.btn {
 							color: $bg;
-							background: $active-color-darker;
-							border: 1px solid $active-color-darker;
+							background: $active-color;
+							border: 1px solid $active-color;
 						}
 					}
 				}
@@ -173,18 +173,6 @@ header {
 			}
 			.title_inner {
 				display: inline-block;
-				vertical-align: middle;
-				text-align: center;
-				position: relative;
-				line-height: 18px;
-				font-size: $default-size;
-				color: $dark-color;
-				text-transform: uppercase;
-				letter-spacing: $extra-letter-spacing;
-				@include transition(all 0.3s ease 0s);
-				@include box-shadow(inset 0 -6px 0px $extra-active-color);
-			}
-			.title_inner_free {
 				vertical-align: middle;
 				text-align: center;
 				position: relative;
@@ -673,38 +661,15 @@ header {
 			}
 		}
 	}
-}
-
-.section.goodbye {
-	@media (max-width: 400px) {
-		text-align: center;
+	.contact_form {
+		margin-top: 30px;
 	}
-	.spaced-items {
-		margin-top: 42px;
-		text-align: center;
-		position: relative;
-	}
-}
-
-.section.capybara {
-	.image {
-		img {
-			width: auto;
-			margin: auto;
-			display: block;
+	.alert-success {
+		display: none;
+		p {
+			margin: 60px 0 30px 0;
+			font-size: $large-size;
 		}
-		@media (max-width: 600px) {
-			img {
-				width: 70%;
-				margin: auto;
-				display: block;
-			}
-		}
-	}
-	.spaced-items {
-		margin-top: 42px;
-		text-align: center;
-		position: relative;
 	}
 }
 
