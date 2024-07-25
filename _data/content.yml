@@ -339,37 +339,25 @@ clients:
     - url: "https://www.google.com"
       image: "assets/img/clients/client_3.png"
 
-### Contact Info [ contactsinfo ]
-contactsinfo:
+### Contact Info [ contacts-info ]
+contacts_info:
   title: "Get in Touch"
   list:
     - label: "Phone"
       icon: "android-phone-portrait"
-      value: "that's a secret"
+      value: "+ (231) 456 67 89"
 
     - label: "Email"
       icon:  "email"
-      value: "<a href='mailto:luis.cano.iri@gmail.com'>luis.cano.iri@gmail.com</a>"
+      value: "<a href='mailto:john-doe@gmail.com'>john-doe@gmail.com</a>"
 
     - label: "Address"
       icon: "ios-location"
-      value: "N.L, Mexico (open to relocate, open to remote)"
+      value: "2621 W Pico Blvd, Los Angeles"
 
-### Goodbye [goodbye]
-goodbye:
-  title: "Hope you liked the site!"
-  text: "Here's the CV in case you missed it :)"
-  download:
-    text: "Download CV"
-    link: "https://drive.google.com/"
-
-### Capybara [capybara]
-capybara:
-  image: "assets/img/capywave.jpg"
-  text: "Click below for capybara pictures"
-  download:
-    text: "Capybaras"
-    link: "https://drive.google.com/"
+### Contact Form [ contacts-form ]
+contacts_form:
+  title: "Contact Form"
 
 =======
 ### Contact Info List [ contacts-info ]
