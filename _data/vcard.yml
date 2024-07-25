@@ -12,10 +12,10 @@ main:
   photo: ""
   name: "Luis Cano"
   typed:
-    - "Data Analyst who also does some Analytics Engineering."
-    - "Development of data source applications // Analytics // Dashboards // Automations // High level data handling."
-    - "Based in Mexico. Working @ Envato as SEO Data Analyst."
-    - "Top 3 favorite animals: 1. Capybaras, 2. Otters, 3. Racoons"
+    - text: "Data Analyst who also does some Analytics Engineering."
+    - text: "Development of data source applications // Analytics // Dashboards // Automations // High level data handling."
+    - text: "Based in Mexico. Working @ Envato as SEO Data Analyst."
+    - text: "Top 3 favorite animals: 1. Capybaras, 2. Otters, 3. Racoons"
   social:
     - title: "Linkedin"
       icon: "fab fa-linkedin"
