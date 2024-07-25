@@ -472,7 +472,7 @@ $(function () {
 
 		subtitleContainer.typed({
 			stringsElement: subtitleContainer.find('.typing-title'),
-			backDelay: 3500, /* Delay in text change */
+			backDelay: 1500, /* Delay in text change */
 			typeSpeed: 0, /* Typing speed */
 			loop: true
 		});
