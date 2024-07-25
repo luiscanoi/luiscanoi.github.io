@@ -1,10 +1,10 @@
 ---
 title: Social Website
-category: Content
-category_slug: f-content
+category: Design
+category_slug: design
 type: content
-image: assets/img/works/work9.jpg
-button_url: https://bslthemes.com/
+image: assets/img/works/work7.jpg
+button_url: #
 ---
 
 So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.

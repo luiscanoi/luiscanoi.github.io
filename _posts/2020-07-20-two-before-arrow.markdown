@@ -3,7 +3,7 @@ layout: post
 title:  Two Before Arrow Not Relied
 date:   2020-07-20
 category: Design
-image: assets/img/blog/blog_4.jpg
+image: assets/img/blog/blog2.jpg
 author: Ryan Adlard
 tags: code
 ---

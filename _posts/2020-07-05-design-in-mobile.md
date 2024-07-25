@@ -3,7 +3,7 @@ layout: post
 title:  Design in Mobile Application
 date:   2020-07-05
 category: Mobile
-image: assets/img/blog/blog_3.jpg
+image: assets/img/blog/blog3.jpg
 author: Ryan Adlard
 tags: 
   - app

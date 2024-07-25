@@ -1,11 +1,11 @@
 /*!
- * imagesLoaded PACKAGED v4.1.4
+ * imagesLoaded PACKAGED v4.1.0
  * JavaScript is all like "You images are done yet or what?"
  * MIT License
  */
 
 /**
- * EvEmitter v1.1.0
+ * EvEmitter v1.0.1
  * Lil' event emitter
  * MIT License
  */
@@ -14,7 +14,7 @@
 
 ( function( global, factory ) {
   // universal module definition
-  /* jshint strict: false */ /* globals define, module, window */
+  /* jshint strict: false */ /* globals define, module */
   if ( typeof define == 'function' && define.amd ) {
     // AMD - RequireJS
     define( 'ev-emitter/ev-emitter',factory );
@@ -26,7 +26,7 @@
     global.EvEmitter = factory();
   }
 
-}( typeof window != 'undefined' ? window : this, function() {
+}( this, function() {
 
 
 
@@ -59,8 +59,8 @@ proto.once = function( eventName, listener ) {
   // set once flag
   // set onceEvents hash
   var onceEvents = this._onceEvents = this._onceEvents || {};
-  // set onceListeners object
-  var onceListeners = onceEvents[ eventName ] = onceEvents[ eventName ] || {};
+  // set onceListeners array
+  var onceListeners = onceEvents[ eventName ] = onceEvents[ eventName ] || [];
   // set flag
   onceListeners[ listener ] = true;
 
@@ -85,14 +85,13 @@ proto.emitEvent = function( eventName, args ) {
   if ( !listeners || !listeners.length ) {
     return;
   }
-  // copy over to avoid interference if .off() in listener
-  listeners = listeners.slice(0);
+  var i = 0;
+  var listener = listeners[i];
   args = args || [];
   // once stuff
   var onceListeners = this._onceEvents && this._onceEvents[ eventName ];
 
-  for ( var i=0; i < listeners.length; i++ ) {
-    var listener = listeners[i]
+  while ( listener ) {
     var isOnce = onceListeners && onceListeners[ listener ];
     if ( isOnce ) {
       // remove listener
@@ -103,14 +102,12 @@ proto.emitEvent = function( eventName, args ) {
     }
     // trigger listener
     listener.apply( this, args );
+    // get next listener
+    i += isOnce ? 0 : 1;
+    listener = listeners[i];
   }
 
   return this;
-};
-
-proto.allOff = function() {
-  delete this._events;
-  delete this._onceEvents;
 };
 
 return EvEmitter;
@@ -118,7 +115,7 @@ return EvEmitter;
 }));
 
 /*!
- * imagesLoaded v4.1.4
+ * imagesLoaded v4.1.0
  * JavaScript is all like "You images are done yet or what?"
  * MIT License
  */
@@ -149,7 +146,7 @@ return EvEmitter;
     );
   }
 
-})( typeof window !== 'undefined' ? window : this,
+})( window,
 
 // --------------------------  factory -------------------------- //
 
@@ -170,23 +167,22 @@ function extend( a, b ) {
   return a;
 }
 
-var arraySlice = Array.prototype.slice;
-
 // turn element or nodeList into an array
 function makeArray( obj ) {
+  var ary = [];
   if ( Array.isArray( obj ) ) {
     // use object if already an array
-    return obj;
-  }
-
-  var isArrayLike = typeof obj == 'object' && typeof obj.length == 'number';
-  if ( isArrayLike ) {
+    ary = obj;
+  } else if ( typeof obj.length == 'number' ) {
     // convert nodeList to array
-    return arraySlice.call( obj );
+    for ( var i=0; i < obj.length; i++ ) {
+      ary.push( obj[i] );
+    }
+  } else {
+    // array of single index
+    ary.push( obj );
   }
-
-  // array of single index
-  return [ obj ];
+  return ary;
 }
 
 // -------------------------- imagesLoaded -------------------------- //
@@ -202,19 +198,13 @@ function ImagesLoaded( elem, options, onAlways ) {
     return new ImagesLoaded( elem, options, onAlways );
   }
   // use elem as selector string
-  var queryElem = elem;
   if ( typeof elem == 'string' ) {
-    queryElem = document.querySelectorAll( elem );
-  }
-  // bail if bad element
-  if ( !queryElem ) {
-    console.error( 'Bad element for imagesLoaded ' + ( queryElem || elem ) );
-    return;
+    elem = document.querySelectorAll( elem );
   }
 
-  this.elements = makeArray( queryElem );
+  this.elements = makeArray( elem );
   this.options = extend( {}, this.options );
-  // shift arguments if no options set
+
   if ( typeof options == 'function' ) {
     onAlways = options;
   } else {
@@ -233,7 +223,9 @@ function ImagesLoaded( elem, options, onAlways ) {
   }
 
   // HACK check async to allow time to bind listeners
-  setTimeout( this.check.bind( this ) );
+  setTimeout( function() {
+    this.check();
+  }.bind( this ));
 }
 
 ImagesLoaded.prototype = Object.create( EvEmitter.prototype );
@@ -401,9 +393,7 @@ LoadingImage.prototype.check = function() {
 };
 
 LoadingImage.prototype.getIsImageComplete = function() {
-  // check for non-zero, non-undefined naturalWidth
-  // fixes Safari+InfiniteScroll+Masonry bug infinite-scroll#671
-  return this.img.complete && this.img.naturalWidth;
+  return this.img.complete && this.img.naturalWidth !== undefined;
 };
 
 LoadingImage.prototype.confirm = function( isLoaded, message ) {
@@ -494,3 +484,4 @@ ImagesLoaded.makeJQueryPlugin();
 return ImagesLoaded;
 
 });
+

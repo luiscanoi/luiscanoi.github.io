@@ -3,7 +3,7 @@ layout: post
 title:  "By spite about do of do allow blush"
 date:   2020-08-05
 category: Music
-image: assets/img/blog/blog_5.jpg
+image: assets/img/blog/blog1.jpg
 author: Ryan Adlard
 tags: rock
 ---

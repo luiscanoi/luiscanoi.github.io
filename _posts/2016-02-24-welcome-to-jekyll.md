@@ -5,7 +5,7 @@ date: 2020-08-08
 category:
   - Video
   - Music
-image: assets/img/blog/blog_1.jpg
+image: assets/img/blog/blog1.jpg
 author: Sarah Rose
 tags: Jekyll
 ---

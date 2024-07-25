@@ -4,6 +4,7 @@ layout: default
 
 {% assign ui_text = site.data.ui-text['ui_text'] %}
 
+<<<<<<< Updated upstream
 <!-- Started -->
 <div class="section started">
 	<div class="centrize full-width">
@@ -19,36 +20,49 @@ layout: default
 	</div>
 	<a href="#" class="mouse_btn"><span class="ion ion-mouse"></span></a>
 </div>
+=======
+<!--
+	Card - Blog
+-->
+<div class="card-inner blog blog-archive animated" id="blog-archive-card">
+	<div class="card-wrap">
+>>>>>>> Stashed changes
 
-<!-- Blog -->
-<div class="section blog">
-	<div class="content">
-		<div class="box-items post-items">
-			{% for post in page.posts %}
-			<div class="box-item post-item">
-				<div class="image">
-					<a href="{{ post.url }}">
-						{% if post.image != nil %}
-						<img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
-						{% endif %}
-						<span class="info">
-							<span class="centrize full-width">
-								<span class="vertical-center">
-									<span class="ion ion-ios-book-outline"></span>
+		<!-- Blog -->
+		<div class="content blog">
+
+			<!-- title -->
+			<div class="title">{{ ui_text.archive }}: {{ page.title }}</div>
+
+			<!-- content -->
+			<div class="row border-line-v post-items" data-page="{{ paginator.page }}" data-total="{{ paginator.total_pages }}">
+				{% for post in page.posts %}
+				<!-- blog item -->
+				<div class="col col-d-12 col-t-12 col-m-12 border-line-h post-item">
+					<div class="box-item">
+						<div class="image">
+							<a href="{{ post.url }}">
+								{% if post.image != nil %}
+								<img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+								{% endif %}
+								<span class="info">
+									<span class="ion ion-document-text"></span>
 								</span>
-							</span>
-						</span>
-					</a>
+								<span class="date"><strong>{{ post.date | date: "%d" }}</strong>{{ post.date | date: "%b" }}</span>
+							</a>
+						</div>
+						<div class="desc">
+							<a href="{{ post.url }}" class="name">{{ post.title }}</a>
+							<div class="category">{{ post.categories | join: ", " }}</div>
+						</div>
+					</div>
 				</div>
-				<div class="desc">
-					<div class="date">{{ post.date | date: site.date_format }}</div>
-					<!--<div class="categories">{{ post.categories | join: ", " }}</div>-->
-					<a href="{{ post.url }}" class="name">{{ post.title }}</a>
-				</div>
+				{% endfor %}
+
+				<div class="clear"></div>
 			</div>
-			{% endfor %}
+
 		</div>
 
-		<div class="clear"></div>
 	</div>
 </div>
