@@ -717,8 +717,12 @@ textarea,
   transition: transform 0.2s 0.8s, opacity 0.2s 0.8s;
 }
 
-
-
+/* Height limited styles */
+@media screen and (max-height: 629px) {
+	.intro-list {
+		display: none;
+		}
+}
 
 /* MOBILE ONLY STYLES */	
 @media screen and (max-width: 991px) { 
