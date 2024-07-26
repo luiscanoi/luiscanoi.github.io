@@ -88,7 +88,7 @@
                             <div class="nav-menu menu-with-icons">
                                 <ul>
 <li><a class="home" href="index.html">Home</a></li>
-                                <li><a class="search-toggle">Search</a></li>
+                                <li><a class="search-toggle">Search</a></li> 
                     
                     			</ul>
                             </div>
@@ -128,10 +128,10 @@
                      
                     
                      
-                    <div class="layout-medium"> 
-                        <div id="primary" class="content-area">
-                     
                     
+                     
+                    <div class="layout-fixed"> 
+                        <div id="primary" class="content-area">
                     
                     
                      
@@ -145,35 +145,101 @@
                             <div id="content" class="site-content" role="main"> <!-- .page-single -->
                                 <div class="page-single page-layout">
                                 
-                                
-                                            <!-- .hentry -->
-                                            <article class="hentry">
+                                    
+                                        <!-- .hentry -->
+                                        <article class="hentry">
+                                            
+                                            <!-- .entry-header -->
+                                            <header class="entry-header">
+                                                 <h1 class="entry-title">form elements</h1>
+                                            </header>
+                                            <!-- .entry-header -->
+                                            
+                    
+                                            <!-- .entry-content -->
+                                            <div class="entry-content">
+                                            
+                                                <p>Here are all forms elements cross browser styled.</p>
+                                          
+                                            
+                                              <form action="#" method="post" class="validate-form">
                                                 
-                                                <!-- .entry-header -->
-                                                <header class="entry-header">
-                                                     <h1 class="entry-title">Oh Nooo!</h1>
-                                                </header>
-                                                <!-- .entry-header -->
+                                                <p>
+                                                  <input type="text" placeholder="Name" name="your-name" id="your-name" class="required">
+                                                </p>
                                                 
-                        
-                                                <!-- .entry-content -->
-                                                <div class="entry-content">
-                                                            
-                                                    <!-- http-alert -->
-                                                    <div class="http-alert">
-                                                        <h1><i class="pw-icon-way"></i></h1>
-                                                        <p>The page you are looking for was not found!</p>
-                                                    </div>
-                                                    <!-- http-alert -->
+                                                <p>
+                                                  <input placeholder="Email" type="text" name="your-email" id="your-email" class="required email">
+                                                </p>
                                                 
+                                                <p>
+                                                  <input placeholder="Subject" name="subject" id="subject">
+                                                </p>
+                                                
+                                                <p>
+                                                  <label for="budget">Budget</label>
+                                                  <select name="budget" id="budget">
+                                                    <option value="1000$">1000$</option>
+                                                    <option value="2000$">2000$</option>
+                                                    <option value="3000$">3000$</option>
+                                                    <option value="5000$+">5000$+</option>
+                                                  </select>
+                                                </p>
+                                                 
+                                                 <p>
+                                                    <label for="attach-file">Attach a file</label>
+                                                    <input type="file" name="attach-file" id="attach-file">
+                                                </p>
+                                                
+                                                <p>
+                                                  <textarea placeholder="Message" name="your-message" id="your-message"></textarea>
+                                                </p>
+                                               
+                                                
+                                                <p>
+                                                    <label>Tech</label>
+                                    
+                                                    <label class="inline-label">
+                                                        <input type="checkbox" name="gender[]" value="male">HTML5
+                                                    </label>
+                                                    <label class="inline-label">
+                                                        <input type="checkbox" name="gender[]" value="female">jQuery
+                                                    </label>
+                                                    <label class="inline-label">
+                                                        <input type="checkbox" name="gender[]" value="female">Wordpress
+                                                    </label>
+                                                </p>
+                                                
+                                                <p>
+                                                    <label>Gender</label>
+                                    
+                                                    <label class="inline-label">
+                                                        <input type="radio" name="radio" value="radio-1" class="required">male
+                                                    </label>
+                                    
+                                                    <label class="inline-label">
+                                                        <input type="radio" name="radio" value="radio-2" class="required">female
+                                                    </label>
+                                                </p>
+                                                
+                                                
+                                                <p>
+                                                  <input type="submit" value="Send it">
+                                                </p>
+                                              </form>
+                                                
+                                                
+                                               
                                             </div>
                                             <!-- .entry-content -->
+                                            
                                         
                                         </article>
                                         <!-- .hentry -->
-                                         
+                                    
+                                    
                                 </div>
-                                <!-- .page-single -->         
+                                <!-- .page-single --> 
                 
                 
                 </div>
