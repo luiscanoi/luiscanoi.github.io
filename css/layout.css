@@ -363,9 +363,9 @@ Main components
 }
 
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1590px) {
   .card-intro h1 {
-    font-size: 8rem;
+    font-size: 7rem;
   	}
   .is-ajax-page-active .card-layout .card {
 	  max-width: 860px;

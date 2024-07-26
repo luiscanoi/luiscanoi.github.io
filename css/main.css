@@ -718,8 +718,8 @@ textarea,
 }
 
 /* Height limited styles */
-@media screen and (max-height: 629px) {
-	.intro-list {
+@media screen and (max-height: 659px) {
+	.card-intro-list {
 		display: none;
 		}
 }
