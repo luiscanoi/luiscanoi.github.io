@@ -718,7 +718,7 @@ textarea,
 }
 
 /* Height limited styles */
-@media screen and (max-height: 659px) {
+@media screen and (max-height: 665px) {
 	.card-intro-list {
 		display: none;
 		}
