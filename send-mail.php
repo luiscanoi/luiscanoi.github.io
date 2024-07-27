@@ -1,9 +1,9 @@
 <?php
 
 	// site owner
-	$site_name = 'unRovr HTML5 Template';
+	$site_name = 'Luis Cano Resume & Portfolio';
 	$sender_domain = 'server@your-domain.com';
-	$to = 'jonhdoeeee@jonhdoe.com';
+	$to = '';
 	
 	// contact form fields
 	$name = trim( $_POST['name'] );
