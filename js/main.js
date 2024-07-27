@@ -661,17 +661,17 @@
 					$submit.addClass("active loading");
 					var formValues = contactForm.serialize();
 					
-					$.post(contactForm.attr('action'), formValues, function (data) {
-						if (data == 'success') {
-							contactForm.clearForm();
-						}
-						else {
-							$alert.addClass('error');
-						}
-						NProgress.done();
-						$alert.show();
-						setTimeout(function () { $alert.hide(); }, 6000);
-					});
+					// $.post(contactForm.attr('action'), formValues, function (data) {
+					if (data == 'success') {
+						contactForm.clearForm();
+					}
+					else {
+						$alert.addClass('error');
+					}
+					NProgress.done();
+					$alert.show();
+					setTimeout(function () { $alert.hide(); }, 6000);
+					// });
 				}
 				return false;
 			});
