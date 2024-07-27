@@ -290,7 +290,7 @@
                                                         <!-- enter mail subject here -->
                                                         <input type="hidden" name="subject" id="subject" value="New Contact Form submission!">
                                                         <input type="hidden" name="from_name" value="Luis Cano Site" />
-                                                        
+                                                        <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
                                                         <p>
                                                           <input placeholder="Name" type="text" name="name" id="name" class="required">
                                                         </p>
@@ -299,9 +299,7 @@
                                                           <input placeholder="Email" type="email" name="email" id="email" class="required email">
                                                         </p>
                                                         
-                                                        <p class="antispam">Leave this empty if you are a human :
-                                                            <br /><input name="url" />
-                                                        </p>
+                                                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                                                         
                                                         <p>
                                                           <textarea placeholder="Message" name="message" id="message" class="required"></textarea>
