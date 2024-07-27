@@ -637,23 +637,25 @@
 							},
 							body: json
 						})
-						.then(async (response) => {
+						.then(async (response) => {//show response
 							let json = await response.json();
 							if (response.status == 200) {
+								result.classList.add("text-green-500");
 								result.innerHTML = json.message;
 							} else {
 								console.log(response);
+              					result.classList.add("text-red-500");
 								result.innerHTML = json.message;
 							}
 						})
-						.catch(error => {
+						.catch(error => {//show error
 							console.log(error);
 							result.innerHTML = "Something went wrong!";
 						})
-						.then(function() {
+						.then(function() {//reset form
 							form.reset();
 							setTimeout(() => {
-								result.style.display = "Success!";
+								result.style.display = "none";
 							}, 3000);
 						});
 				});
@@ -677,19 +679,19 @@
 			// 	return false;
 			// });
 
-			$.fn.clearForm = function () {
-				return this.each(function () {
-					var type = this.type, tag = this.tagName.toLowerCase();
-					if (tag == 'form')
-						return $(':input', this).clearForm();
-					if (type == 'text' || type == 'password' || tag == 'textarea')
-						this.value = '';
-					else if (type == 'checkbox' || type == 'radio')
-						this.checked = false;
-					else if (tag == 'select')
-						this.selectedIndex = -1;
-				});
-			};
+			// $.fn.clearForm = function () {
+			// 	return this.each(function () {
+			// 		var type = this.type, tag = this.tagName.toLowerCase();
+			// 		if (tag == 'form')
+			// 			return $(':input', this).clearForm();
+			// 		if (type == 'text' || type == 'password' || tag == 'textarea')
+			// 			this.value = '';
+			// 		else if (type == 'checkbox' || type == 'radio')
+			// 			this.checked = false;
+			// 		else if (tag == 'select')
+			// 			this.selectedIndex = -1;
+			// 	});
+			// };
 		}
 
 	}
