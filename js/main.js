@@ -617,81 +617,78 @@
 			var $alert = $('.site-alert');
 			var $submit = contactForm.find('.submit');
 
-			const form = document.getElementById('contact-form');
-			const result = document.getElementById('result');
+			contactForm.on("submit", function () {
+				// e.preventDefault();
+				// const formData = new FormData(form);
+				// const object = Object.fromEntries(formData);
+				// const json = JSON.stringify(object);
+				// result.innerHTML = "Please wait..."
 
-  
-
-			contactForm.on("submit", function (e) {
-				e.preventDefault();
-				const formData = new FormData(form);
-				const object = Object.fromEntries(formData);
-				const json = JSON.stringify(object);
-				result.innerHTML = "Please wait..."
-
-					fetch('https://api.web3forms.com/submit', {
-							method: 'POST',
-							headers: {
-								'Content-Type': 'application/json',
-								'Accept': 'application/json'
-							},
-							body: json
-						})
-						.then(async (response) => {//show response
-							let json = await response.json();
-							if (response.status == 200) {
-								result.classList.add("text-green-500");
-								result.innerHTML = json.message;
-							} else {
-								console.log(response);
-              					result.classList.add("text-red-500");
-								result.innerHTML = json.message;
-							}
-						})
-						.catch(error => {//show error
-							console.log(error);
-							result.innerHTML = "Something went wrong!";
-						})
-						.then(function() {//reset form
-							form.reset();
-							setTimeout(() => {
-								result.style.display = "none";
-							}, 3000);
-						});
-				});
-			// 	if (contactForm.valid()) {
-			// 		NProgress.start();
-			// 		$submit.addClass("active loading");
-			// 		var formValues = contactForm.serialize();
+				// 	fetch('https://api.web3forms.com/submit', {
+				// 			method: 'POST',
+				// 			headers: {
+				// 				'Content-Type': 'application/json',
+				// 				'Accept': 'application/json'
+				// 			},
+				// 			body: json
+				// 		})
+				// 		.then(async (response) => {//show response
+				// 			let json = await response.json();
+				// 			if (response.status == 200) {
+				// 				result.classList.add("text-green-500");
+				// 				result.innerHTML = json.message;
+				// 				result.classList.add("notice--success");
+				// 			} else {
+				// 				console.log(response);
+              	// 				result.classList.add("text-red-500");
+				// 				result.innerHTML = json.message;
+				// 				result.classList.add("notice--warning");
+				// 			}
+				// 		})
+				// 		.catch(error => {//show error
+				// 			console.log(error);
+				// 			result.innerHTML = "Something went wrong!";
+				// 		})
+				// 		.then(function() {//reset form
+				// 			form.reset();
+				// 			setTimeout(() => {
+				// 				result.style.display = "none";
+				// 			}, 3000);
+				// 		});
+				// });
+				if (contactForm.valid()) {
+					NProgress.start();
+					$submit.addClass("active loading");
+					var formValues = contactForm.serialize();
 					
-			// 		$.post(contactForm.attr('action'), formValues, function (data) {
-			// 			if (data == 'success') {
-			// 				contactForm.clearForm();
-			// 			}
-			// 			else {
-			// 				$alert.addClass('error');
-			// 			}
-			// 			NProgress.done();
-			// 			$alert.show();
-			// 			setTimeout(function () { $alert.hide(); }, 6000);
-			// 		});
-			// 	}
-			// 	return false;
-			// });
+					$.post(contactForm.attr('action'), formValues, function (data) {
+						if (data == 'success') {
+							contactForm.clearForm();
+						}
+						else {
+							$alert.addClass('error');
+						}
+						NProgress.done();
+						$alert.show();
+						setTimeout(function () { $alert.hide(); }, 6000);
+					});
+				}
+				return false;
+			});
 
-			// $.fn.clearForm = function () {
-			// 	return this.each(function () {
-			// 		var type = this.type, tag = this.tagName.toLowerCase();
-			// 		if (tag == 'form')
-			// 			return $(':input', this).clearForm();
-			// 		if (type == 'text' || type == 'password' || tag == 'textarea')
-			// 			this.value = '';
-			// 		else if (type == 'checkbox' || type == 'radio')
-			// 			this.checked = false;
-			// 		else if (tag == 'select')
-			// 			this.selectedIndex = -1;
-			// 	});
-			// };
+			$.fn.clearForm = function () {
+				return this.each(function () {
+					var type = this.type, tag = this.tagName.toLowerCase();
+					if (tag == 'form')
+						return $(':input', this).clearForm();
+					if (type == 'text' || type == 'password' || tag == 'textarea')
+						this.value = '';
+					else if (type == 'checkbox' || type == 'radio')
+						this.checked = false;
+					else if (tag == 'select')
+						this.selectedIndex = -1;
+				});
+			};
 		}
 
 	}

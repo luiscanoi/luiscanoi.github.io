@@ -283,14 +283,14 @@
                                                 <div class="contact-form">
                                                 
                                                     <!-- <form id="contact-form" class="validate-form" method="post" action="send-mail.php"> -->
-                                                    <form id="contact-form" class="validate-form" method="POST">
+                                                    <form id="contact-form" class="validate-form" action='https://api.web3forms.com/submit' method="POST">
                                                         
                                                         <input type="hidden" name="access_key" value="8248c40e-29fb-4061-9093-fe4d38ee6062" />
 
                                                         <!-- enter mail subject here -->
                                                         <input type="hidden" name="subject" id="subject" value="New Contact Form submission!">
                                                         <input type="hidden" name="from_name" value="Luis Cano Site" />
-                                                        <input type="hidden" name="redirect" value="https://luiscanoi.github.io/#/contact">
+                                                        <!-- <input type="hidden" name="redirect" value="https://luiscanoi.github.io/#/contact"> -->
                                                         <p>
                                                           <input placeholder="Name" type="text" name="name" id="name" class="required">
                                                         </p>
