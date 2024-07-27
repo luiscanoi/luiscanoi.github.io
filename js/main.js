@@ -657,7 +657,7 @@
 				// 		});
 				// });
 				if (contactForm.valid()) {
-					NProgress.start();
+					// NProgress.start();
 					$submit.addClass("active loading");
 					var formValues = contactForm.serialize();
 					
@@ -668,7 +668,7 @@
 					else {
 						$alert.addClass('error');
 					}
-					NProgress.done();
+					// NProgress.done();
 					$alert.show();
 					setTimeout(function () { $alert.hide(); }, 6000);
 					// });
