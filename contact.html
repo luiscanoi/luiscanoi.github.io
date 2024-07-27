@@ -172,7 +172,7 @@
                                                 <!-- section-title -->
                                                 <div class="section-title center">    
                                                     <h2>
-                                                        <i>Let's Socialize</i>
+                                                        <i>Find me @</i>
                                                     </h2>
                                                 </div>
                                                 <!-- section-title -->
@@ -209,9 +209,10 @@
                                                         <!-- fun-fact -->
                                                         <div class="fun-fact">
                                                             <!--<i class="pe-7s-map-marker"></i>-->
-                                                            <img src="images/site/icon-location.svg" alt="image"/>
+                                                            <!-- <img src="images/site/icon-location.svg" alt="image"/> -->
+                                                            <i class="demo-icon pw-icon-location-outline"></i>
                                                             <!--<img src="images/site/icon-03.png" alt="image"/>-->
-                                                            <h4>based in Houston, USA</h4>
+                                                            <h4>based in Nuevo Leon, Mexico</h4>
                                                         </div>
                                                         <!-- fun-fact -->
                         
@@ -224,8 +225,9 @@
                                                         <!-- fun-fact -->
                                                         <div class="fun-fact">
                                                             <!--<i class="pe-7s-call"></i>-->
-                                                            <img src="images/site/icon-phone.svg" alt="image"/>
-                                                            <h4>Tel : +123 456 78900</h4>
+                                                            <!-- <img src="images/site/icon-phone.svg" alt="image"/> -->
+                                                            <i class="demo-icon pw-icon-coffee"></i>
+                                                            <h4>Phone: Invite me a coffee first</h4>
                                                         </div>
                                                         <!-- fun-fact -->
                         
@@ -233,13 +235,14 @@
                                                     <!-- column 3/12 -->
                                                     
                                                     <!-- column 3/12 -->
-                                                    <div class="col-xs-6 col-sm-3">
+                                                    <div class="col-xs-6 col-sm-3" style="padding-left: 0px; padding-right: 0px;">
                         
                                                         <!-- fun-fact -->
                                                         <div class="fun-fact">
                                                             <!--<i class="pe-7s-mail"></i>-->
-                                                            <img src="images/site/icon-mail.svg" alt="image"/>
-                                                            <h4>johndoe [at] gmail.com</h4>
+                                                            <!-- <img src="images/site/icon-mail.svg" alt="image"/> -->
+                                                            <i class="demo-icon pw-icon-mail"></i>
+                                                            <h4 class="wider-fun"><a href='mailto:luis.cano.iri@gmail.com'>luis.cano.iri@gmail.com</a></h4>
                                                         </div>
                                                         <!-- fun-fact -->
                         
@@ -252,8 +255,9 @@
                                                         <!-- fun-fact -->
                                                         <div class="fun-fact">
                                                             <!--<i class="pe-7s-check"></i>-->
-                                                            <img src="images/site/icon-check.svg" alt="image"/>
-                                                            <h4>Freelance Available</h4>
+                                                            <!-- <img src="images/site/icon-check.svg" alt="image"/> -->
+                                                            <i class="demo-icon pw-icon-check"></i>
+                                                            <h4>Open to remote or relocate</h4>
                                                         </div>
                                                         <!-- fun-fact -->
                         
@@ -269,7 +273,7 @@
                                                 <!-- section-title -->
                                                 <div class="section-title center">    
                                                     <h2>
-                                                        <i>Drop Me A Line</i>
+                                                        <i>Drop Me A Message</i>
                                                     </h2>
                                                 </div>
                                                 <!-- section-title -->
@@ -278,17 +282,21 @@
                                                 <!-- .contact-form -->
                                                 <div class="contact-form">
                                                 
-                                                    <form id="contact-form" class="validate-form" method="post" action="send-mail.php">
-                                                    
+                                                    <!-- <form id="contact-form" class="validate-form" method="post" action="send-mail.php"> -->
+                                                    <form id="contact-form" class="validate-form" action="https://api.web3forms.com/submit" method="POST">
+                                                        
+                                                        <input type="hidden" name="access_key" value="8248c40e-29fb-4061-9093-fe4d38ee6062" />
+
                                                         <!-- enter mail subject here -->
-                                                        <input type="hidden" name="subject" id="subject" value="You have a new message from unRovr!">
+                                                        <input type="hidden" name="subject" id="subject" value="New Contact Form submission!">
+                                                        <input type="hidden" name="from_name" value="Luis Cano Site" />
                                                         
                                                         <p>
                                                           <input placeholder="Name" type="text" name="name" id="name" class="required">
                                                         </p>
                                                         
                                                         <p>
-                                                          <input placeholder="Email" type="text" name="email" id="email" class="required email">
+                                                          <input placeholder="Email" type="email" name="email" id="email" class="required email">
                                                         </p>
                                                         
                                                         <p class="antispam">Leave this empty if you are a human :
@@ -300,7 +308,7 @@
                                                         </p>
                                                         
                                                         <p>
-                                                          <button class="submit button primary">Send</button>
+                                                          <button class="submit button primary" type="submit">Send</button>
                                                         </p>
                                                     
                                                     </form>
