@@ -618,44 +618,6 @@
 			var $submit = contactForm.find('.submit');
 
 			contactForm.on("submit", function () {
-				// e.preventDefault();
-				// const formData = new FormData(form);
-				// const object = Object.fromEntries(formData);
-				// const json = JSON.stringify(object);
-				// result.innerHTML = "Please wait..."
-
-				// 	fetch('https://api.web3forms.com/submit', {
-				// 			method: 'POST',
-				// 			headers: {
-				// 				'Content-Type': 'application/json',
-				// 				'Accept': 'application/json'
-				// 			},
-				// 			body: json
-				// 		})
-				// 		.then(async (response) => {//show response
-				// 			let json = await response.json();
-				// 			if (response.status == 200) {
-				// 				result.classList.add("text-green-500");
-				// 				result.innerHTML = json.message;
-				// 				result.classList.add("notice--success");
-				// 			} else {
-				// 				console.log(response);
-              	// 				result.classList.add("text-red-500");
-				// 				result.innerHTML = json.message;
-				// 				result.classList.add("notice--warning");
-				// 			}
-				// 		})
-				// 		.catch(error => {//show error
-				// 			console.log(error);
-				// 			result.innerHTML = "Something went wrong!";
-				// 		})
-				// 		.then(function() {//reset form
-				// 			form.reset();
-				// 			setTimeout(() => {
-				// 				result.style.display = "none";
-				// 			}, 3000);
-				// 		});
-				// });
 				if (contactForm.valid()) {
 					// NProgress.start();
 					$submit.addClass("active loading");
@@ -689,6 +651,44 @@
 						this.selectedIndex = -1;
 				});
 			};
+			// e.preventDefault();
+			// const formData = new FormData(form);
+			// const object = Object.fromEntries(formData);
+			// const json = JSON.stringify(object);
+			// result.innerHTML = "Please wait..."
+
+			// 	fetch('https://api.web3forms.com/submit', {
+			// 			method: 'POST',
+			// 			headers: {
+			// 				'Content-Type': 'application/json',
+			// 				'Accept': 'application/json'
+			// 			},
+			// 			body: json
+			// 		})
+			// 		.then(async (response) => {//show response
+			// 			let json = await response.json();
+			// 			if (response.status == 200) {
+			// 				result.classList.add("text-green-500");
+			// 				result.innerHTML = json.message;
+			// 				result.classList.add("notice--success");
+			// 			} else {
+			// 				console.log(response);
+			// 				result.classList.add("text-red-500");
+			// 				result.innerHTML = json.message;
+			// 				result.classList.add("notice--warning");
+			// 			}
+			// 		})
+			// 		.catch(error => {//show error
+			// 			console.log(error);
+			// 			result.innerHTML = "Something went wrong!";
+			// 		})
+			// 		.then(function() {//reset form
+			// 			form.reset();
+			// 			setTimeout(() => {
+			// 				result.style.display = "none";
+			// 			}, 3000);
+			// 		});
+			// });
 		}
 
 	}
